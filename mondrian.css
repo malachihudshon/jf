@@ -1,0 +1,106 @@
+.kitten {content: url("images/boogie_woogie.jpg");}
+.blue {background-color: #0D11A8;}
+.red {background-color: #F50F0F;}
+.yellow {background-color: #FAE317;}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	display: flex;
+    background-color: blue;
+}
+
+.boxx {
+	width:100%;
+	height: 50%;
+	
+}
+
+.narrow-col {
+	width: 25%;
+	height: 100%;
+	
+}
+.wide-col {
+	width: 75%;
+	height: 100%;
+	display:flex;	
+}
+
+
+
+.center-horizontal {
+	align-items: center;	
+}
+
+.center-vertical {
+	justify-content: center;
+}
+.contain-image {
+	max-height: 75%;
+	max-width: 75%;
+}
+@media only screen and (max-width: 700px){
+	body{
+		display:block;
+		background-color: yellow;
+	}
+	.wide-col {
+		width:100%;
+		height:75%;
+		display: flex; 
+		margin:0;
+	  
+  
+	}
+	.boxx {
+		width:50%;
+		height: 100%;
+	
+	}
+ 
+	.narrow-col {
+		height: 25%;
+		width:100%;
+		display: flex; 
+	  
+	}
+	.red {background-color:#F50F0F ;}
+	.yellow {background-color:#0D11A8 ;}
+	.blue {background-color: #FAE317;}
+
+
+}
+@media only screen and (max-width: 500px)
+{
+	body{
+		display:block;
+		background-color: red;
+	}
+	.narrow-col {
+		height: 30%;
+		width:100%;
+		display: block; 
+	}
+	.wide-col {
+		width:100%;
+		height:50%;
+		display: flex; 
+		margin:0;
+  
+	}
+	.boxx {
+		width:100%;
+		height: 100%;
+	
+	}
+	.blue {background-color: #0D11A8;}
+	.red {background-color: #FAE317;}
+	.yellow {background-color:#0D11A8;}
+
+}
+
+
+
+
